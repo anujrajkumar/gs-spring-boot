@@ -9,7 +9,7 @@ trigger:
 pool:
   default
 
-
+steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'app/pom.xml'
