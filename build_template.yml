@@ -1,1 +1,10 @@
-
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'app/pom.xml'
+    publishJUnitResults: false
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
